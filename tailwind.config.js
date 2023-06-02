@@ -21,6 +21,7 @@ module.exports = {
       secondary: "#121626",
       warning: "#FF9500",
       error: "#FF2D55",
+      "error-ground": "#5A0314",
       success: "#34C759",
       white: "#F5F5F5",
       black: "#000000",

@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 body {
-  @apply bg-primary text-white;
+  @apply bg-primary;
+}
+
+.inputOn {
+  @apply block pl-5 py-2 text-sm text-gray-dark border focus:border-primary focus:ring-primary focus:outline-none focus:ring focus:ring-opacity-40
+}
+
+.inputOff{
+  @apply block pl-5 py-2 text-sm text-error border focus:border-error ring-error outline-none ring ring-opacity-40
 }
