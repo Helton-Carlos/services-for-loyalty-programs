@@ -6,10 +6,27 @@ body {
   @apply bg-primary;
 }
 
-.inputOn {
-  @apply block pl-5 py-2 text-sm text-gray-dark border focus:border-primary focus:ring-primary focus:outline-none focus:ring focus:ring-opacity-40
+p,
+h1,
+h2,
+h3,
+h4,
+span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.inputOff{
-  @apply block pl-5 py-2 text-sm text-error border focus:border-error ring-error outline-none ring ring-opacity-40
+input, button {
+  @apply mb-4;
+}
+
+.inputOn {
+  @apply 
+    block pl-5 py-2 text-sm text-gray-dark border focus:border-primary focus:ring-primary focus:outline-none focus:ring focus:ring-opacity-40;
+}
+
+.inputOff {
+  @apply 
+    block pl-5 py-2 text-sm text-error border focus:border-error ring-error outline-none ring ring-opacity-40;
 }
