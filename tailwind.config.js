@@ -23,6 +23,7 @@ module.exports = {
       error: "#FF2D55",
       "error-ground": "#5A0314",
       success: "#34C759",
+      "success-ground": "#009927",
       white: "#F5F5F5",
       black: "#000000",
       gray: "#47536D",

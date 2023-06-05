@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BodyDashboar: typeof import('./src/components/BodyDashboard/BodyDashboar.vue')['default']
     BodyDashboard: typeof import('./src/components/BodyDashboardd/BodyDashboard.vue')['default']
+    Button: typeof import('./src/components/Button/Button.vue')['default']
     Header: typeof import('./src/components/Header/Header.vue')['default']
     IconsBell: typeof import('./src/components/Icons/IconsBell.vue')['default']
     IconsClosed: typeof import('./src/components/Icons/IconsClosed.vue')['default']
