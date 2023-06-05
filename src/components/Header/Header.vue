@@ -2,8 +2,8 @@
 
 <template>
   <div class="w-full bg-secondary flex justify-end items-center gap-4 p-5">
-    <Sun />
-    <Bell />
-    <Profile />
+    <icons-sun />
+    <icons-bell />
+    <icons-profile />
   </div>
 </template>

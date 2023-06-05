@@ -9,11 +9,16 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Bell: typeof import('./src/components/Icons/Bell.vue')['default']
+    BodyDashboar: typeof import('./src/components/BodyDashboard/BodyDashboar.vue')['default']
+    BodyDashboard: typeof import('./src/components/BodyDashboardd/BodyDashboard.vue')['default']
     Header: typeof import('./src/components/Header/Header.vue')['default']
-    Profile: typeof import('./src/components/Icons/Profile.vue')['default']
+    IconsBell: typeof import('./src/components/Icons/IconsBell.vue')['default']
+    IconsClosed: typeof import('./src/components/Icons/IconsClosed.vue')['default']
+    IconsProfile: typeof import('./src/components/Icons/IconsProfile.vue')['default']
+    IconsSrofile: typeof import('~icons/ic/ons-srofile')['default']
+    IconsSun: typeof import('./src/components/Icons/IconsSun.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Sun: typeof import('./src/components/Icons/Sun.vue')['default']
+    SelectDashboard: typeof import('./src/components/SelectDashboard/SelectDashboard.vue')['default']
   }
 }
