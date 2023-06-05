@@ -12,7 +12,6 @@ import SelectDashboard from "@/components/SelectDashboard/SelectDashboard.vue";
         <div class="flex flex-col">
           <div>
             <icons-closed class="p-2" />
-
             <hr />
           </div>
 
