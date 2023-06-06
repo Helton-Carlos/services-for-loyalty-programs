@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Header from "@/components/Header/Header.vue";
 import Button from "@/components/Button/Button.vue";
+import CardPerson from "@/components/CardPerson/CardPerson.vue";
 import SelectDashboard from "@/components/SelectDashboard/SelectDashboard.vue";
 </script>
 
@@ -19,12 +20,16 @@ import SelectDashboard from "@/components/SelectDashboard/SelectDashboard.vue";
             <div class="flex justify-between items-center mx-2">
               <SelectDashboard />
 
-              <div class="flex  gap-4">
+              <div class="flex gap-4">
                 <Button color="standard" title="Append, take off bonus" />
                 <Button color="sucess" title="Add Sale" />
               </div>
             </div>
             <hr />
+          </div>
+
+          <div>
+            <CardPerson />
           </div>
         </div>
       </div>
