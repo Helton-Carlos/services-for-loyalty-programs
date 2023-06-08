@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     BodyDashboard: typeof import('./src/components/BodyDashboardd/BodyDashboard.vue')['default']
     Button: typeof import('./src/components/Button/Button.vue')['default']
     Card: typeof import('./src/components/CardPerson/Card.vue')['default']
+    CardInfo: typeof import('./src/components/CardInfo/CardInfo.vue')['default']
     CardPerson: typeof import('./src/components/CardPerson/CardPerson.vue')['default']
     Header: typeof import('./src/components/Header/Header.vue')['default']
     IconsBag: typeof import('./src/components/Icons/IconsBag.vue')['default']

@@ -3,13 +3,14 @@ import Header from "@/components/Header/Header.vue";
 import Button from "@/components/Button/Button.vue";
 import CardPerson from "@/components/CardPerson/CardPerson.vue";
 import SelectDashboard from "@/components/SelectDashboard/SelectDashboard.vue";
+import CardInfo from "@/components/CardInfo/CardInfo.vue";
 </script>
 
 <template>
   <div>
     <Header />
     <div class="w-11/12 mx-auto my-4">
-      <div class="w-full h-full bg-secondary gap-4 text-gray">
+      <div class="w-full h-full bg-secondary gap-2 text-gray">
         <div class="flex flex-col">
           <div>
             <icons-closed class="p-2" />
@@ -28,8 +29,9 @@ import SelectDashboard from "@/components/SelectDashboard/SelectDashboard.vue";
             <hr />
           </div>
 
-          <div>
+          <div class="flex">
             <CardPerson />
+            <CardInfo />
           </div>
         </div>
       </div>
