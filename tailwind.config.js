@@ -10,7 +10,7 @@ module.exports = {
       xl: "1440px",
     },
     fontSize: {
-      sm: '0.875rem',
+      sm: '0.87rem',
       base: '1.1rem',
       xl: '1.4rem',
       '2xl': '1.7rem',
@@ -24,7 +24,7 @@ module.exports = {
       "error-ground": "#5A0314",
       success: "#34C759",
       "success-ground": "#009927",
-      white: "#F5F5F5",
+      white: "#FFFF",
       black: "#000000",
       gray: "#47536D",
       "gray-card": "#161A2E",

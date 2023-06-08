@@ -17,7 +17,7 @@
         <icons-bag />
         <div>
           <p class="text-xl text-white">5</p>
-          <p>Purchases</p>
+          <p class="text-gray">Purchases</p>
         </div>
       </div>
 
@@ -25,18 +25,18 @@
         <icons-returns />
         <div>
           <p class="text-xl text-white">1</p>
-          <p>Returns</p>
+          <p class="text-gray">Returns</p>
         </div>
       </div>
     </div>
 
     <div>
-      <p class="my-2">Details</p>
+      <p class="my-2 text-white">Details</p>
       <hr />
     </div>
 
     <div>
-      <ul>
+      <ul class="text-gray">
         <li>Contact: +7 (917) 250-11-33</li>
         <li>Email: art89@google.com</li>
         <li>Card: Standart</li>
@@ -44,8 +44,21 @@
       </ul>
     </div>
 
-    <p class="text-white py-4">Segments</p>
+    <p class="my-2 text-white">Segments</p>
 
-    <Tag title="Potentially loyal" color="blue" />
+    <div class="flex flex-wrap gap-4">
+      <Tag title="Potentially loyal" color="standard" />
+      <Tag title="25 years" color="dange" />
+      <Tag title="2 purchases" color="sucess" />
+    </div>
+
+    <div class="py-5">
+      <img src="@/assets/working/Luna.png" alt="Luna" />
+    </div>
+
+    <div class="flex justify-center gap-4">
+      <Button color="sucess" title="Edit" />
+      <Button color="dange" title="Suspend" />
+    </div>
   </div>
 </template>

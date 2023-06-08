@@ -7,14 +7,14 @@ defineProps<ITag>();
 <template>
   <div>
     <div
-      class="px-8 py-2"
+      class="py-1 px-5 border-2 rounded-full"
       :class="{
-        tagblue: color == 'blue',
-        taggreen: color == 'green',
-        tagred: color == 'red',
+        'tag-blue': color == 'standard',
+        'tag-green': color == 'sucess',
+        'tag-red': color == 'dange',
       }"
     >
-      {{ title }}
+      <span class="text-sm">{{ title }}</span>
     </div>
   </div>
 </template>
