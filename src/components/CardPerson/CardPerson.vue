@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="border-2 bg-gray-card w-[350px] p-4 rounded-xl">
+  <div class="w-full border-2 bg-gray-card p-4 rounded-xl md:w-[350px]">
     <div class="flex gag-4">
       <img src="@/assets/components/Avatar.png" alt="Avatar" />
 

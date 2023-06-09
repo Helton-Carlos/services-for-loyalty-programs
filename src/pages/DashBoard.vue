@@ -26,10 +26,10 @@ const cardInfos = reactive([
           </div>
 
           <div>
-            <div class="flex justify-between items-center mx-2">
+            <div class="mx-2 md:flex md:justify-between items-center">
               <SelectDashboard />
 
-              <div class="flex gap-4">
+              <div class="gap-4 md:flex">
                 <Button color="standard" title="Append, take off bonus" />
                 <Button color="sucess" title="Add Sale" />
               </div>
@@ -37,9 +37,9 @@ const cardInfos = reactive([
             <hr />
           </div>
 
-          <div class="flex flex-wrap gap-2 m-4">
+          <div class="flex flex-wrap gap-3 m-3">
             <CardPerson />
-
+            
             <CardInfo
               v-for="(card, index) in cardInfos"
               :key="index"

@@ -8,7 +8,7 @@ defineEmits<{ (e: "onClick"): void }>();
 <template>
   <div>
     <button
-      class=" px-8 py-2 rounded gap-2 font-medium text-white"
+      class="w-full px-8 py-2 rounded gap-2 font-medium text-white my-2"
       :class="{
         standard: color == 'standard',
         positive: color == 'sucess',

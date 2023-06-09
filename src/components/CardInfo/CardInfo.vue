@@ -5,7 +5,7 @@ defineProps<ICardInfo>();
 </script>
 
 <template>
-  <div class="border-2 bg-gray-card w-[200px] h-[80px] p-4 rounded-xl">
+  <div class="w-full h-[80px] border-2 bg-gray-card p-4 rounded-xl md:w-[200px]">
     <div class="flex justify-between items-center">
       <div>
         <p class="text-white">{{ values }}</p>
