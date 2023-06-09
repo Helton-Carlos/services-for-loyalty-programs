@@ -4,13 +4,21 @@ import Button from "@/components/Button/Button.vue";
 import CardPerson from "@/components/CardPerson/CardPerson.vue";
 import SelectDashboard from "@/components/SelectDashboard/SelectDashboard.vue";
 import CardInfo from "@/components/CardInfo/CardInfo.vue";
+import { reactive } from "vue";
+
+const cardInfos = reactive([
+  { values: 1.25, title: "Points Balance", icons: "Balance" },
+  { values: 13, title: "Pending", icons: "Pending" },
+  { values: 1, title: "Redeemed", icons: "Redeemed" },
+  { values: 2, title: "Expired", icons: "Expired" },
+]);
 </script>
 
 <template>
   <div>
     <Header />
     <div class="w-11/12 mx-auto my-4">
-      <div class="w-full h-full bg-secondary gap-2 text-gray">
+      <div class="w-full h-full bg-secondary text-gray">
         <div class="flex flex-col">
           <div>
             <icons-closed class="p-2" />
@@ -29,9 +37,16 @@ import CardInfo from "@/components/CardInfo/CardInfo.vue";
             <hr />
           </div>
 
-          <div class="flex">
+          <div class="flex flex-wrap gap-2 m-4">
             <CardPerson />
-            <CardInfo />
+
+            <CardInfo
+              v-for="(card, index) in cardInfos"
+              :key="index"
+              :values="card.values"
+              :title="card.title"
+              :icons="card.icons"
+            />
           </div>
         </div>
       </div>
