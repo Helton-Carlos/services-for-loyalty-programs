@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { chatData, chatOptions } from "./chartConfig";
 import { Bar } from "vue-chartjs";
 import {
   Chart as ChartJS,
@@ -18,38 +19,12 @@ ChartJS.register(
   CategoryScale,
   LinearScale
 );
-
-const chartData = {
-  labels: [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ],
-  datasets: [
-    {
-      label: "Data One",
-      backgroundColor: "#1B25AC",
-      data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11],
-    },
-  ],
-};
-
-const chartOptions = {
-  responsive: true,
-};
 </script>
 
 <template>
-  <div class="w-full bg-gray-card border-2 p-4 rounded-xl md:w-[350px]">
-    <Bar id="my-chart-id" :options="chartOptions" :data="chartData" />
+  <div v-for="(data, index) in chatData" :key="index">
+    <div class="w-full bg-gray-card border-2 p-4 rounded-xl md:w-[410px]">
+      <Bar id="my-chart-id" :options="chatOptions" :data="data" />
+    </div>
   </div>
 </template>

@@ -53,7 +53,9 @@ const cardInfos = reactive([
                 />
               </div>
 
-              <Chart />
+              <div class="flex flex-wrap gap-3">
+                <Chart />
+              </div>
             </div>
           </div>
         </div>
