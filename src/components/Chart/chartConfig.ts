@@ -23,11 +23,11 @@ export const chatData = [
     ],
   },
   {
-    labels: ["VueJs", "EmberJs", "ReactJs", "AngularJs"],
+    labels: ["January", "February", "March", "April"],
     datasets: [
       {
         label: "Data Two",
-        backgroundColor: ["#41B883", "#E46651", "#00D8FF", "#DD1B16"],
+        backgroundColor: ["#1B25AC", "#8E31F5", "#DE37D8", "#5E185C"],
         data: [40, 20, 80, 10],
       },
     ],
